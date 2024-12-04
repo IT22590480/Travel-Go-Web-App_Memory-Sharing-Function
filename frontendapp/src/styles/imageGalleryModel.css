@@ -1,0 +1,59 @@
+.modalStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right:0;
+  width: 98%;
+  height: 100%;
+  z-index: 999;
+  margin: 0 auto; /* Center the modal horizontally */
+  backdrop-filter: blur(20px); /* Adjust the blur radius as needed */
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Border color and thickness */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  overflow-y: auto; /* Enable vertical scrolling */
+
+}
+
+.modalContentStyle {
+  
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Border color and thickness */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.closeButtonStyle {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  cursor: pointer !important;
+  width: 30px;
+  height: fit-content;
+  font-size: 40px !important;
+}
+
+.image-grid {
+  top:20;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+.image {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
